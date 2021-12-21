@@ -71,7 +71,7 @@ Including an example of how to use your role (for instance, with variables passe
          - { role: username.rolename, x: 42 }
     ---
     - name: Java Hardening OSCAP
-      user: inayat
+      user: ec2-user
       hosts: localhost
       become: true
   
