@@ -15,7 +15,6 @@
     - low_disruption
     - medium_severity
     - no_reboot_needed
-
 - name: Ensure Java Config File Exists
   file:                                                                                                                                                                     
     path: /etc/.java/deployment/deployment.config                                                                                                                           
@@ -30,7 +29,6 @@
     - low_disruption                                                                                                                                                        
     - medium_severity                                                                                                                                                       
     - no_reboot_needed
-
 - name: Ensure Java deployment.properties File Exists                                                                                                                       
   file:                                                                                                                                                                     
     path: /etc/.java/deployment/deployment.properties                                                                                                                       
@@ -45,7 +43,6 @@
     - low_disruption                                                                                                                                                        
     - medium_severity                                                                                                                                                       
     - no_reboot_needed
-
 - name: Ensure YUM Removes Previous Package Versions
   lineinfile:
     dest: /etc/yum.conf
@@ -62,7 +59,6 @@
     - medium_severity
     - no_reboot_needed
     - restrict_strategy
-
 - name: Enable Java Web Start Applications to Run
   lineinfile:
     create: true
@@ -79,8 +75,6 @@
     - low_complexity
     - low_disruption
     - no_reboot_needed
-
-
 - name: Configure the Path to the exception.sites File
   lineinfile:
     create: true
@@ -97,7 +91,6 @@
     - low_disruption
     - medium_severity
     - no_reboot_needed
-
 - name: Configure The Java Deployment Mandatory Setting
   lineinfile:
     create: true
@@ -114,7 +107,6 @@
     - low_disruption
     - medium_severity
     - no_reboot_needed
-
 - name: Configure the Path to the deployment.properties File
   lineinfile:
     create: true
@@ -131,7 +123,6 @@
     - low_disruption
     - medium_severity
     - no_reboot_needed
-
 - name: Prompt User Prior to Executing Mobile Code
   lineinfile:
     create: true
@@ -148,8 +139,6 @@
     - low_disruption
     - medium_severity
     - no_reboot_needed
-
-
 - name: Lock Execution of Signed Java Applets From Untrusted Sources Setting
   lineinfile:
     create: true
@@ -166,7 +155,6 @@
     - low_disruption
     - medium_severity
     - no_reboot_needed
-
 - name: Enable Revocation Checks for Publisher Certificates
   lineinfile:
     create: true
@@ -183,8 +171,6 @@
     - low_disruption
     - medium_severity
     - no_reboot_needed
-
-
 - name: Enable Use of Certificate Revocation Lists
   lineinfile:
     create: true
@@ -201,8 +187,6 @@
     - low_disruption
     - medium_severity
     - no_reboot_needed
-
-
 - name: Enable Online Certificate Validation
   lineinfile:
     create: true
@@ -219,7 +203,6 @@
     - low_disruption
     - medium_severity
     - no_reboot_needed
-
 - name: Prevent the Download of Prohibited Mobile Code
   lineinfile:
     create: true
@@ -236,7 +219,6 @@
     - low_disruption
     - medium_severity
     - no_reboot_needed
-
 - name: Disable User Access to Prohibited Mobile Code Setting
   lineinfile:
     create: true
@@ -253,7 +235,6 @@
     - low_disruption
     - medium_severity
     - no_reboot_needed
-
 - name: Disable Execution of Signed Java Applets From Untrusted Sources Setting
   lineinfile:
     create: true
@@ -270,7 +251,6 @@
     - low_disruption
     - medium_severity
     - no_reboot_needed
-
 - name: Disable User Access to Disabling Untrusted Sources Setting
   lineinfile:
     create: true
@@ -287,7 +267,6 @@
     - low_disruption
     - medium_severity
     - no_reboot_needed
-
 - name: Disable User Access to Java Web Start Application Setting
   lineinfile:
     create: true
@@ -304,7 +283,6 @@
     - low_complexity
     - low_disruption
     - no_reboot_needed
-
 - name: Disable User Access to Insecure Prompt of Mobile Code Setting
   lineinfile:
     create: true
@@ -321,7 +299,6 @@
     - low_disruption
     - medium_severity
     - no_reboot_needed
-
 - name: Disable User Access to Locking Untrusted Sources Setting
   lineinfile:
     create: true
@@ -338,7 +315,6 @@
     - low_disruption
     - medium_severity
     - no_reboot_needed
-
 - name: Disable User Access to Revocation Check Settings
   lineinfile:
     create: true
@@ -355,8 +331,6 @@
     - low_disruption
     - medium_severity
     - no_reboot_needed
-
-
 - name: Disable Execution of Unsigned Applications
   lineinfile:
     create: true
@@ -373,8 +347,6 @@
     - low_complexity
     - low_disruption
     - no_reboot_needed
-
-
 - name: Disable User Access to Unsigned Applications Setting
   lineinfile:
     create: true
@@ -391,7 +363,6 @@
     - low_complexity
     - low_disruption
     - no_reboot_needed
-
 - name: Disable User Access to Online Certificate Validation Setting
   lineinfile:
     create: true
@@ -408,7 +379,6 @@
     - low_disruption
     - medium_severity
     - no_reboot_needed
-
 - name: Disable User Access to Certificate Revocation List Settings
   lineinfile:
     create: true
@@ -425,7 +395,3 @@
     - low_disruption
     - medium_severity
     - no_reboot_needed
-
-
-
-
